@@ -18,9 +18,19 @@ import { DashboardSliderComponent } from './dashboard-slider/dashboard-slider.co
 import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SignupStep1Component } from './signup-step1/signup-step1.component';
+import { SignupStep2Component } from './signup-step2/signup-step2.component';
+import { SignupStep3Component } from './signup-step3/signup-step3.component';
+import { SignupStep4Component } from './signup-step4/signup-step4.component';
+import { SignupWelcomeComponent } from './signup-welcome/signup-welcome.component';
+import { DashboardAccountComponent } from './dashboard-account/dashboard-account.component';
+import { DashboardAccountPaymentComponent } from './dashboard-account-payment/dashboard-account-payment.component';
+import { DashboardFavoritesComponent } from './dashboard-favorites/dashboard-favorites.component';
+import { DashboardMovieProfileComponent } from './dashboard-movie-profile/dashboard-movie-profile.component';
+import { DashboardProfileComponent } from './dashboard-profile/dashboard-profile.component';
 
 const appRoutes: Routes = [
- { path: '', component: HomeComponent}, 
+{path: 'index', component: HomeComponent}, 
 {path: 'faq', component:FaqComponent},
 {path: 'dashboard-navbar', component:DashboardNavbarComponent},
 {path: 'dashboard-home', component:DashboardHomeComponent},
@@ -28,6 +38,16 @@ const appRoutes: Routes = [
 {path: 'dashboard-playlists', component:DashboardPlaylistsComponent},
 {path: 'dashboard-comingsoon', component:DashboardComingsoonComponent},
 {path: 'dashboard-arrivals', component:DashboardArrivalsComponent},
+{path: 'signup-step1', component:SignupStep1Component},
+{path: 'signup-step2', component:SignupStep2Component},
+{path: 'signup-step3', component:SignupStep3Component},
+{path: 'signup-step4', component:SignupStep4Component},
+{path: 'signup-welcome', component:SignupWelcomeComponent},
+{path: 'dashboard-account-payment', component:DashboardAccountPaymentComponent},
+{path: 'dashboard-favorites', component:DashboardFavoritesComponent},
+{path: 'dashboard-movie-profile', component:DashboardMovieProfileComponent},
+{path: 'dashboard-account', component:DashboardAccountComponent},
+{path: 'dashboard-profile', component:DashboardProfileComponent},
 {path: '**', component: NotFoundComponent}
 
 //  {path: 'login', component: }
@@ -50,6 +70,16 @@ const appRoutes: Routes = [
     DashboardHeaderComponent,
     DashboardHomeComponent,
     NotFoundComponent,
+    SignupStep1Component,
+    SignupStep2Component,
+    SignupStep3Component,
+    SignupStep4Component,
+    SignupWelcomeComponent,
+    DashboardAccountComponent,
+    DashboardAccountPaymentComponent,
+    DashboardFavoritesComponent,
+    DashboardMovieProfileComponent,
+    DashboardProfileComponent,
   ],
   imports: [
     BrowserModule,

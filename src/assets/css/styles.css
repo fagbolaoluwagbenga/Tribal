@@ -2674,7 +2674,7 @@ h6.light-weight-heading {
 }
 
 #pricing-plans-background-image {
-    background-image: url(images/demo/signup-background.jpg);
+    background-image: url(/assets/images/demo/signup-background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -3562,12 +3562,14 @@ ul.checkmark-list-pro li:before {
     border: none;
     position: relative;
     zoom: 1;
-    -webkit-transform: translateZ(0)
+    -webkit-transform: translateZ(0);
+    transform: none
 }
 
 .flexslider .slides>li {
     display: none;
-    -webkit-backface-visibility: hidden
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
 }
 
 .flexslider .slides:after {
